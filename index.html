@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+  <style>
+    .gradient-background {
+      background: linear-gradient(300deg, rgb(212, 230, 13), rgb(43, 189, 215), rgb(142, 230, 192));
+      background-size: 180% 180%;
+      animation: gradient-animation 18s ease infinite;
+    }
+    
+    .about{
+    text-align: center;
+    font-family: "Merriweather", serif;
+    }
+
+    .container-edu{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        align-items: center;
+    }
+    .work-con{
+        display: flex;
+        flex-direction: column;
+        background-color: lightblue;
+        border: 5px solid black;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin: 0 auto;
+    }
+    @media (max-width: 900px) {
+        .work-con {
+             width: 100%;
+        }
+    }
+
+    .bottom-container {
+    background-color: rgb(43, 189, 215);
+    padding: 50px 0 20px;
+    font-size: 17px;
+    }
+    .bottom{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    }
+    
+    body {
+    color: #40514e;
+    margin: 0;
+    text-align: center;
+    font-family: "Merriweather", serif;
+    }
+    </style>
+<body>
+    <section id="Home" class="gradient-background">
+      <div class="container">
+        <header class="d-flex justify-content-center py-3">
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#work" class="nav-link">Work-Experience</a></li>
+            <li class="nav-item"><a href="https://harshitha-eluri.github.io/Harshitha-Resume/" class="nav-link">Resume</a></li>
+            <li class="nav-item"><a href="https://harshitha-eluri.github.io/html-protfolio/" class="nav-link">Portfolia</a></li>
+            
+            
+          </ul>
+        </header>
+      </div> 
+    </section>
+
+    <section id="title" class="gradient-background">
+        <div class="container col-xxl-8 px-4 ">
+            <div class="row flex-lg-row-reverse align-items-center g-5">
+              <div class="col-10 col-sm-8 col-lg-6">
+                <img src="./Profile_pic.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="100%" height="100%" loading="lazy">
+              </div>
+              <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Hello All!</h1>
+                <h2 class="lead fw-bold display-6">I'm Harshitha Eluri</h2>
+                <p >This is my personal website.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    
+    <section>
+        <div id="about" class="container about">
+            <h1 class ="fw-bold mt-5" >About Me</h1>
+            <p class="pt-3 fs-5">I am a learner, pursuing btech in Mechanical, Materials and Aerospace Engineering in Indian Institute of Technology, Dharwad.</p>
+            <hr class="mt-5">
+            <h2 class="fw-bold mt-5">Education</h2>
+            <div class="container-edu">
+                <p class="fw-bold">Qualification</p>   
+                <p class="fw-bold">Institute</p>
+                <p class="fw-bold">Aggregate</p>
+
+                <p>SSC, 10th (2019)</p>
+                <p>Kairali School, Devarapalli</p>
+                <p>10 CGPA</p>
+            
+                <p>Intermediate (2019-2021)</p>
+                <p>Sri Chaitanya Junior College, Visakhapatnam</p>
+                <p>98.2%</p>
+
+                <p>Btech in MMAE (2021-2025)</p>
+                <p>Indian Institute of Technology, Dharwad</p>
+                <p>89.5 CGPA till 4th semester</p>
+            </div>
+            <h2 class="fw-bold mt-5">Skills</h2>
+            <p class="flex-column">
+                <p class="fs-5">Autocad</p>
+                <p class="fs-5">Solid Works</p>
+                <p class="fs-5">Matlab</p>
+                <p class="fs-5">C++</p>
+                <p class="fs-5">Kuchipudi Dancer</p>
+            </p>
+        </div>  
+        <hr>
+    </section>
+
+    <section>
+        <div id="work" class="about my-5"></div>
+            <h1 class="about fw-bold mb-5">Work Experience</h1>
+                <div class="about work-con">
+                    <p>Teaching experience for 1 month</p>
+                    <p>Done training in Steel Plant, Visakhapatnam for 1 month</p>
+                    <p>Student Mentor in Btech</p>
+                    <p>Dance club Secretary in  Btech</p>
+                    <p>Marketing and Logistics team member of Parsec</p>
+                    <p>Volunteered for tree plantation, road cleanliness, blood donation programmes as a NSS volunteer</p>
+                    <p>Spicmacy event volunteer, Event Manager</p>
+                    <p>Performed duet and group dance in IIT Madras, for Inter IIT Cultural Meet 5.0</p>
+                </div>
+        </div>
+    </section>
+    <section>
+    <div class="bottom-container">
+    <div class="bottom">
+        <a class="footer-link" href="https://www.linkedin.com/in/e-harshitha-562b76229">LinkedIn</a>
+        <a class="footer-link" href="eluriharshitha@gmail.com">Mail id.</a>
+        <a class="footer-link" href="6301240650">Contact no.</a>  
+    </div>
+    <p class="copyright pt-3">© 2023 Harshitha.E</p>
+    </div>
+    </section>
+</body>
+</html>
